@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css?family=Titillium+Web:300,400,700');
+@import url('https://fonts.googleapis.com/css?family=Quicksand:300,400,700');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: #3f3950;
+    font-family: 'Quicksand', sans-serif;   
+}
+
+button {
+    border: 0;
+    font-family: 'Quicksand', sans-serif; 
+    font-weight: 700;
+    font-size: 13px;
+    background-color: #785ca7;
+    color: white;
+}
+
+.ui-sortable {
+  min-height: 80px;
+}
+
+.board-header {
+    background-color: #1c2f44;
+    color: #ffffff;
+}
+
+.board-header h1 {
+    margin: 0;
+    padding: 10px;  
+}
+
+.board-header button {
+    padding: 10px;    
+    margin: 10px;
+    background-color: #cf8f20;
+}
+
+.column-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.column {
+    order: 1;
+    min-width: 300px;
+    min-height: 50vh;
+    background-color: #F2F2F2;
+    border: 2px solid;
+    list-style: none;
+    position: relative;
+}
+
+.column-title {
+    padding: 15px;
+    margin: 0;
+    background: #e6e6e6;
+}
+
+.column-add-card {
+    cursor: pointer;
+    text-decoration: underline;
+    margin: 5px 8px;
+    display: block;
+}
+
+.card {
+    box-sizing: border-box;
+    display: block;    
+    max-width: 100%;
+    min-height: 60px;
+    margin-bottom: 5px;
+    overflow: hidden;
+    position: relative;
+    background-color: #c4c4c4; 
+}
+
+.column-card-list {
+    list-style: none;
+    margin: 5px;
+    padding: 0px;
+}
+
+.btn-delete-column {
+    position: absolute;
+    top: 5px;
+    right: 10px;    
+}
+
+.card-description {
+    margin: 2px 0;    
+    max-width: 185px;
+    padding: 5px;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    hyphens: auto;  
+}
+
+.card-placeholder {
+    box-sizing: border-box;
+    display: block;
+    height: 60px;
+    margin-bottom: 5px;    
+    background-color: #e6e6e6;
+}
+
+.btn-add-card {
+    margin: 5px;
+    padding: 5px;
+}
+
+.btn-delete {
+    position: absolute;
+    top: 3px;
+    right: 20px;
+}
+
+.btn-green {
+    top: 0;
+    right: 0;
+    position: absolute;
+    background-color: #aef7ae;
+    width: 15px;
+    height: 20px;
+}
+
+.btn-yellow {
+    top: 20px;
+    right: 0;
+    position: absolute;
+    background-color: #f0f5ae;
+    width: 15px;
+    height: 20px;
+}
+
+.btn-red {
+    top: 40px;
+    right: 0;
+    position: absolute;
+    background-color: #f19191;
+    width: 15px;
+    height: 20px;
+}
